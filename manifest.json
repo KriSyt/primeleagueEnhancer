@@ -1,0 +1,15 @@
+{
+	"manifest_version" : 2,
+	"name": "KriSyts primeLeague Addon",
+	"description": "generate op.gg links out of name",
+	"version": "0.0.1",
+	"content_scripts": [
+		{
+		  "matches": [
+			"https://www.primeleague.gg/*"
+		  ],
+		  "js": ["content.js"]
+		}
+	  ],
+	 "permissions": ["notifications", "storage"]
+}
